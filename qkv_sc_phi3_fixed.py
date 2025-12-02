@@ -158,8 +158,9 @@ if __name__ == "__main__":
                 print(f"{ent} - {role}: {e['text']}")
 
     # 检索
-    result = cache.retrieve("what is Zorbex?")
+    result = cache.retrieve("how is Zorbex?")
     if result:
         print(f"\n✅ Retrieved: {result['retrieved_text']} (score: {result['score']:.2f})")
     else:
+
         print("\n❌ Retrieval failed.")
